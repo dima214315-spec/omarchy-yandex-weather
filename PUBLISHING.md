@@ -27,7 +27,7 @@ gh repo create omarchy-yandex-weather --public --source=. --push \
 Если репозиторий с таким именем уже есть, то:
 
 ```bash
-git remote add origin https://github.com/polehome/omarchy-yandex-weather.git
+git remote add origin https://github.com/dima214315-spec/omarchy-yandex-weather.git
 git push -u origin main
 ```
 
@@ -35,7 +35,7 @@ git push -u origin main
 
 ```bash
 cd ~/tmp   # любая пустая папка
-git clone https://github.com/polehome/omarchy-yandex-weather.git
+git clone https://github.com/dima214315-spec/omarchy-yandex-weather.git
 cp -r omarchy-yandex-weather ~/.config/omarchy/plugins/pole.yandex-weather
 omarchy restart shell
 omarchy bar put pole.yandex-weather --section centerEnd

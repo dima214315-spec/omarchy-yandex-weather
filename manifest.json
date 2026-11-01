@@ -6,7 +6,7 @@
   "author": "pole",
   "license": "MIT",
   "description": "Текущая погода и прогноз на 10 дней для выбранного города по данным Яндекс.Погоды. Панель с прогнозом по дням и по частям суток, список городов, поиск по-русски и по-английски, определение города по геолокации.",
-  "homepage": "https://github.com/polehome/omarchy-yandex-weather",
+  "homepage": "https://github.com/dima214315-spec/omarchy-yandex-weather",
   "kinds": [
     "bar-widget"
   ],

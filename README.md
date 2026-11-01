@@ -8,7 +8,7 @@
 ## Установка
 
 ```bash
-git clone https://github.com/polehome/omarchy-yandex-weather.git \
+git clone https://github.com/dima214315-spec/omarchy-yandex-weather.git \
   ~/.config/omarchy/plugins/pole.yandex-weather
 omarchy bar put pole.yandex-weather --section centerEnd
 ```
