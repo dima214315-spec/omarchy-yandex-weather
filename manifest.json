@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "pole.yandex-weather",
+  "name": "Яндекс Погода",
+  "version": "1.0.0",
+  "author": "pole",
+  "license": "MIT",
+  "description": "Текущая погода и прогноз на 10 дней для выбранного города по данным Яндекс.Погоды. Панель с прогнозом по дням и по частям суток, список городов, поиск по-русски и по-английски, определение города по геолокации.",
+  "homepage": "https://github.com/polehome/omarchy-yandex-weather",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Яндекс Погода",
+    "description": "Текущая погода и прогноз на 10 дней по данным Яндекс.Погоды.",
+    "category": "Время",
+    "allowMultiple": false,
+    "defaultSection": "centerEnd",
+    "defaults": {
+      "city": "elektrougli",
+      "cityName": "Электроугли",
+      "cities": [
+        { "slug": "elektrougli", "name": "Электроугли" },
+        { "slug": "moscow", "name": "Москва" }
+      ],
+      "refreshMinutes": 30,
+      "showCondition": false,
+      "outerGap": 10
+    },
+    "schema": [
+      {
+        "key": "city",
+        "type": "string",
+        "label": "Город",
+        "description": "Слаг города на Яндекс.Погоде, например elektrougli или moscow. Меняется из панели.",
+        "defaultValue": "elektrougli"
+      },
+      {
+        "key": "cityName",
+        "type": "string",
+        "label": "Название города",
+        "description": "Как город подписан в панели.",
+        "defaultValue": "Электроугли"
+      },
+      {
+        "key": "cities",
+        "type": "list",
+        "label": "Мои города",
+        "description": "Список городов для быстрого переключения в панели.",
+        "defaultValue": [
+          { "slug": "elektrougli", "name": "Электроугли" },
+          { "slug": "moscow", "name": "Москва" }
+        ]
+      },
+      {
+        "key": "refreshMinutes",
+        "type": "number",
+        "label": "Обновлять каждые, минут",
+        "description": "Как часто обновлять погоду в фоне. 0 — только при открытии панели.",
+        "defaultValue": 30
+      },
+      {
+        "key": "showCondition",
+        "type": "boolean",
+        "label": "Показывать состояние в баре",
+        "description": "Добавить рядом с температурой слово (ясно, дождь…).",
+        "defaultValue": false
+      },
+      {
+        "key": "outerGap",
+        "type": "number",
+        "label": "Отступ от соседей в баре, px",
+        "description": "Свободное место с каждой стороны виджета в баре.",
+        "defaultValue": 10
+      }
+    ]
+  }
+}
