@@ -10,19 +10,12 @@
 ```bash
 git clone https://github.com/dima214315-spec/omarchy-yandex-weather.git \
   ~/.config/omarchy/plugins/pole.yandex-weather
-omarchy bar put pole.yandex-weather --section centerEnd
-```
-
-Без git: скачайте архив c GitHub и распакуйте в
-`~/.config/omarchy/plugins/pole.yandex-weather/`, затем:
-
-```bash
 omarchy restart shell
 omarchy bar put pole.yandex-weather --section centerEnd
 ```
 
-Обновление: `git -C ~/.config/omarchy/plugins/pole.yandex-weather pull`,
-затем `omarchy restart shell`.
+Подробно (архивом, первая настройка, обновление, удаление, если что-то не
+так) — в [INSTALL.md](INSTALL.md).
 
 ## Как пользоваться
 
